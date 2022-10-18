@@ -66,7 +66,7 @@
   "data": [
     {
       "name": "temp",
-      "url": "data.json"
+      "url": "data1.json"
     },
     {
       "name": "contours",
