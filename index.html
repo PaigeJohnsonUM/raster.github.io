@@ -17,11 +17,16 @@
 <p>City data collected from <a
         href="https://simplemaps.com/data/us-cities">https://simplemaps.com/data/us-cities</a></p>
 <div id="vis"></div>
+<div id="vis2"></div>
 <div id="visa"></div>
 <script>
     const spec = "raster1.json";
+    const spec2 = "";
     vegaEmbed("#vis", spec)
         // result.view provides access to the Vega View API
+        .then(result => console.log(result))
+        .catch(console.warn);
+    vegaEmbed("#vis2", spec)
         .then(result => console.log(result))
         .catch(console.warn);
 </script>
