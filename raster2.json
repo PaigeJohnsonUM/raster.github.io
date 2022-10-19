@@ -6,7 +6,7 @@
   "autosize": "fit-x",
   "title": {
     "offset": 0,
-    "text": "Monthly Average Temperature for August 2017",
+    "text": "Ocean Surface Temperature(C) May 2015",
     "fontSize": 18
   },
   "signals": [
@@ -56,7 +56,7 @@
     },
     {
       "name": "stop",
-      "value": 50
+      "value": 40
     },
     {
       "name": "step",
@@ -75,7 +75,7 @@
         {
           "type": "isocontour",
           "thresholds": {
-            "signal": "sequence(-25, stop, step)"
+            "signal": "sequence(25, stop, 1)"
           }
         }
       ]
@@ -111,10 +111,10 @@
       "name": "color",
       "type": "quantize",
       "domain": {
-        "signal": "[-30, stop]"
+        "signal": "[25, stop]"
       },
       "range": {
-        "scheme": "turbo",
+        "scheme": "viridis",
         "count": {
           "signal": "levels"
         }

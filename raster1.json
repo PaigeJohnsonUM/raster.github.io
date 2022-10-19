@@ -1,12 +1,12 @@
 {
   "$schema": "https://vega.github.io/schema/vega/v5.json",
-  "description": "For Assignment 3. Temperature taken daily and averaged over the month of August 2017 pitted against fires in the same month.",
+  "description": "For ",
   "width": 600,
   "height": 300,
   "autosize": "fit-x",
   "title": {
     "offset": 0,
-    "text": "Monthly Average Temperature for August 2017",
+    "text": "Ocean Surface Salinity May 2015",
     "fontSize": 18
   },
   "signals": [
@@ -75,7 +75,7 @@
         {
           "type": "isocontour",
           "thresholds": {
-            "signal": "sequence(-25, stop, step)"
+            "signal": "sequence(-50, stop, 1)"
           }
         }
       ]
@@ -111,10 +111,10 @@
       "name": "color",
       "type": "quantize",
       "domain": {
-        "signal": "[-30, stop]"
+        "signal": "[0, stop]"
       },
       "range": {
-        "scheme": "turbo",
+        "scheme": "viridis",
         "count": {
           "signal": "levels"
         }
@@ -176,7 +176,7 @@
   ],
   "legends": [
     {
-      "title": "Temperature (C)",
+      "title": "Salinity level",
       "fill": "color",
       "orient": "bottom",
       "offset": 5,
