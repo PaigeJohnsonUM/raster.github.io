@@ -176,7 +176,7 @@
   ],
   "legends": [
     {
-      "title": "Temperature (C)",
+      "title": "Salinity level",
       "fill": "color",
       "orient": "bottom",
       "offset": 5,
