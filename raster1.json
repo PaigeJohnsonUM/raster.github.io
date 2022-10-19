@@ -6,7 +6,7 @@
   "autosize": "fit-x",
   "title": {
     "offset": 0,
-    "text": "Ocean Surface Salinity May 2015",
+    "text": "Ocean Surface Temperature(C) May 2015",
     "fontSize": 18
   },
   "signals": [
